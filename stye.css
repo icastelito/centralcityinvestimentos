@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 :root {
@@ -13,11 +14,26 @@
     --mediumgrey: #a7a7a7;
     --grey: #c4c4c4;
     --darkgrey: #343434;
-    --black: #1D021D;
+    --black: #1d021d;
     --lightblue: #b2dffc;
     --blue: #1b77f3;
     --darkblue: #3b5998;
-    --red: #CF3C3f;
+    --red: #cf3c3f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 5vh;
+    font-weight: 500;
+}
+
+a {
+    transition: 300ms;
 }
 
 a:visited {
@@ -31,21 +47,9 @@ a:link {
 }
 
 a:hover {
-    color: yellow;
+    color: rgb(0, 90, 90);
     text-decoration: none;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    width: 10px;
-    background-color: #1D021D;
-}
-
-html {
-    scroll-behavior: smooth;
+    transition: 300ms;
 }
 
 nav ul {
@@ -53,23 +57,35 @@ nav ul {
     display: flex;
     gap: 2rem;
     position: fixed;
-    height: 4rem;
+    height: 3rem;
     width: 100%;
-    background-image: linear-gradient(to bottom, var(--darkgrey), rgba(128, 0, 128, 0));
+    background-image: linear-gradient(to bottom, rgba(255, 166, 0, 0.5), rgba(255, 217, 0, 0));
     align-items: center;
     justify-content: center;
 }
 
+
 section {
     min-height: 100vh;
+    height: 120vh;
 }
 
 h1 {
     padding-top: 4rem;
 }
 
-a {
-    border-style: solid;
+h2 {
+    text-align: center;
+    padding-top: 15%;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    font-size: 4vh;
+}
+
+p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2vh;
 }
 
 footer {
@@ -78,34 +94,40 @@ footer {
     width: 100%;
 }
 
+
 .logo {
-    height: 80vh;
+    height: 60vh;
 }
 
 .home_page {
-    box-shadow: inset 0 0 0 10000px rgba(202, 175, 86, 0.4);
-    background-image: url("./images/home-wallpaper.jpeg");
+    box-shadow: inset 0 0 0 10000px rgba(233, 195, 73, 0.3);
+    background-image: url("./images/product-wallpaper.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 210vh;
+    background-size: 250vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.home_page {
-    border-style: solid;
-}
+
 
 .produtos {
-    border-style: solid;
+    box-shadow: inset 0 0 0 10000px rgba(202, 175, 86, 0.2);
+    background-image: url("./images/home-wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .quem_somos {
-    border-style: solid;
+    background-image: url("./images/about-us-wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,12 +135,26 @@ footer {
 
 .tabela_de_precos {
     border-style: solid;
-    width: 50vh;
-    height: 50vh;
+    width: 80vh;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 300ms;
+}
+
+.tabela_de_precos:hover {
+    background-color: rgba(255, 238, 191, 0.9);
+    transition: 300ms;
 }
 
 .informacoes_legais {
     border-style: solid;
-    width: 50vh;
-    height: 50vh;
+    width: 80vh;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 300ms;
+}
+
+.informacoes_legais:hover {
+    background-color: rgba(255, 238, 191, 0.9);
+    transition: 300ms;
 }
